@@ -15,15 +15,15 @@ const sum = (arr) => {
 
 const comboSum = (arr, sum) => {
   // write code for numbers.comboSum
-  //any combo of numbers in an array equals a given sum.
   for (let i = 0; i < arr.length; i++) {
     for (let j = 1; j < arr.length; j++) {
       if (arr[i] + arr[j] === sum) {
         return true
-      } 
+      } else {
+        return false;
+      }
     }
   }
-
 }
 
 module.exports = {
