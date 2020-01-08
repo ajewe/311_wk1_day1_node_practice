@@ -19,11 +19,9 @@ const comboSum = (arr, sum) => {
     for (let j = 1; j < arr.length; j++) {
       if (arr[i] + arr[j] === sum) {
         return true
-      } else {
-        return false;
       }
     }
-  }
+  } return false
 }
 
 module.exports = {
